@@ -1,0 +1,82 @@
+.topBar {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  #logo {
+    top: 15px;
+    left: 20px;
+
+    h5 {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      img {
+        width: 120px;
+      }
+    }
+  }
+
+  .nav-but-wrap {
+    position: absolute;
+    z-index: 100;
+    right: 20px;
+    top: 20px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+
+    .menu-icon {
+      height: 40px;
+      width: 40px;
+      position: relative;
+      cursor: pointer;
+      display: block;
+
+      .menu-icon__line {
+        height: 4px;
+        border-radius: 10px;
+        width: 40px;
+        display: block;
+        background-color: #fff;
+        margin-bottom: 7px;
+        cursor: pointer;
+        -webkit-transition: background-color 0.5s ease,
+          -webkit-transform 0.2s ease;
+        transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
+        transition: transform 0.2s ease, background-color 0.5s ease;
+        transition: transform 0.2s ease, background-color 0.5s ease,
+          -webkit-transform 0.2s ease;
+      }
+
+      .menu-icon__line-left {
+        width: 20px;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+
+      .menu-icon__line-right {
+        width: 20px;
+        float: right;
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+    }
+
+    &:hover .menu-icon__line-left,
+    &:hover .menu-icon__line-right {
+      width: 40px;
+    }
+  }
+}

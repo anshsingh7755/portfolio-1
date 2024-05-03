@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+.intro svg {
+  width: 100%;
+  height: auto;
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  padding-bottom: 2rem;
+}
+
+.intro svg tspan {
+  letter-spacing: 0.5rem;
+}
+
+.intro svg tspan > tspan {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: -1500;
+}
+
+.intro svg tspan > tspan:nth-of-type(1) {
+  -webkit-animation: draw 300ms 150ms forwards;
+  animation: draw 300ms 150ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(2) {
+  -webkit-animation: draw 300ms 300ms forwards;
+  animation: draw 300ms 300ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(3) {
+  -webkit-animation: draw 300ms 450ms forwards;
+  animation: draw 300ms 450ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(4) {
+  -webkit-animation: draw 300ms 600ms forwards;
+  animation: draw 300ms 600ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(5) {
+  -webkit-animation: draw 300ms 750ms forwards;
+  animation: draw 300ms 750ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(6) {
+  -webkit-animation: draw 300ms 900ms forwards;
+  animation: draw 300ms 900ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(7) {
+  -webkit-animation: draw 300ms 1050ms forwards;
+  animation: draw 300ms 1050ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(8) {
+  -webkit-animation: draw 300ms 1200ms forwards;
+  animation: draw 300ms 1200ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(9) {
+  -webkit-animation: draw 300ms 1350ms forwards;
+  animation: draw 300ms 1350ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(10) {
+  -webkit-animation: draw 300ms 1500ms forwards;
+  animation: draw 300ms 1500ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(11) {
+  -webkit-animation: draw 300ms 1650ms forwards;
+  animation: draw 300ms 1650ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(12) {
+  -webkit-animation: draw 300ms 1800ms forwards;
+  animation: draw 300ms 1800ms forwards;
+}
+
+.intro svg tspan > tspan:nth-of-type(13) {
+  -webkit-animation: draw 300ms 1950ms forwards;
+  animation: draw 300ms 1950ms forwards;
+}
+
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+/*# sourceMappingURL=svgIntro.css.map */

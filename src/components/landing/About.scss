@@ -1,0 +1,59 @@
+#about {
+
+    vertical-align: middle;
+    visibility: hidden;
+
+    .row {
+        height: 100%;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        min-height: 350px;
+        width: 100%;
+
+        .about-text {
+
+            .rev-block-full {
+                padding: 25px;
+                top: 5rem;
+                left: 5rem;
+                width: 100%;
+                z-index: 2;
+                background-color: #f7f7f7;
+
+                @media only screen and (max-width: 767px) {
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        .about-img {
+            padding: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        span {
+
+            &:before,
+            &:after {
+                display: block;
+                content: "";
+                width: 20px;
+                height: 20px;
+                position: absolute;
+            }
+        }
+
+    }
+}
+
+body #about button:hover span::before,
+body #about button:hover span::after {
+    width: 100px;
+    height: 100px;
+}
